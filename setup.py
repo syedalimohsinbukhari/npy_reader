@@ -17,4 +17,10 @@ setup(
             "License :: OSI Approved :: MIT License",
             "Programming Language :: Python :: 3.7"
             ],
+        # https://chriswarrick.com/blog/2014/09/15/python-apps-the-right-way-entry_points-and-scripts/
+        entry_points={
+            "gui_scripts": [
+                "npy_reader = npy_reader.npy_reader:main"
+                ]
+            }
         )

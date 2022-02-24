@@ -39,3 +39,10 @@ open_button = tk.Button(master=main, text='Open dialog box', command=lambda: ope
 open_button.place(x=_w / 2, y=60, anchor=tk.CENTER)
 
 main.mainloop()
+
+###################################################################################
+# run
+###################################################################################
+
+if __name__ == '__main__':
+    main.mainloop()

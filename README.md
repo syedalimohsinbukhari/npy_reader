@@ -1,2 +1,3 @@
 # npy_reader
-A tool to read the .npy files.
+
+A simple tool to read and display the numpy (.npy) files.

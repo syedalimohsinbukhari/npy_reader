@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
         name='npy_reader',
-        version='1.0.1',
+        version='1.0.0',
         packages=find_packages(where="src"),
         url='https://github.com/AstrophysicsAndPython/npy_reader',
         license='MIT',

@@ -1,6 +1,8 @@
 """
 Created on Feb 23 08:59:21 2022
 """
+
+import os
 import sys
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
@@ -90,7 +92,7 @@ def main():
 
     def open_file_dialog_box(windows):
         try:
-            npy_file = filedialog.askopenfile(initialdir='~', title='Select .npy file', filetypes=([('npy files', '*.npy')]))
+            npy_file = filedialog.askopenfile(initialdir=os.environ['PWD'], title='Select .npy file', filetypes=([('npy files', '*.npy')]))
             npy_file = np.load(npy_file.name, allow_pickle=True)
             display_npy_file(npy_file, windows)
         except AttributeError:
@@ -139,4 +141,7 @@ def main():
 
 # taken from https://chriswarrick.com/blog/2014/09/15/python-apps-the-right-way-entry_points-and-scripts/
 if __name__ == '__main__':
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except TypeError:
+        pass

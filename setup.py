@@ -15,7 +15,7 @@ setup(
         long_description=readme,
         long_description_content_type="text/markdown",
         python_requires=">=3.7",
-        install_requires=["numpy>=1.12.5", "pysimplegui>=4.57.0"],
+        install_requires=["numpy>=1.12.5", "PySimpleGUI>=4.57.0"],
         classifiers=[
             "License :: OSI Approved :: MIT License",
             "Programming Language :: Python :: 3.7"

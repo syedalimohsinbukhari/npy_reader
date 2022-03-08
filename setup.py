@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
         name='npy_reader',
-        version='1.1.0',
+        version='1.1.1',
         packages=find_packages(where="src"),
         url='https://github.com/AstrophysicsAndPython/npy_reader',
         license='MIT',

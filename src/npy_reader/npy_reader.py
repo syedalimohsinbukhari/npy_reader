@@ -12,7 +12,7 @@ def main():
                                  file_types=(('NumPy File', '.npy'),))
 
     fn = filename.split('/')[-1]
-    _npy = np.load(fn, allow_pickle=True)
+    _npy = np.load(filename, allow_pickle=True)
 
     heading_list = [f'V{i}' for i in range(len(_npy[0]))]
 
